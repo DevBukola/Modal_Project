@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    height: 100vh;
+    background-color: #f8f8da;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+.container-wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+   /* position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%); */
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    width: 8%;
+    padding: 0.5rem;
+}
+
+.modal-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(56, 55, 55, 0.214);
+    top: 0;
+    left: 0;
+    scale: 0;
+    transition: 0.5s;
+}
+
+.modal {
+    background-color: #FFFFFF;
+    border-radius: 0.6rem;
+    padding: 2rem 2rem 3rem 2rem;
+    width: 50%;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bar {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: lightgrey;
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.round {
+    width: 0.4rem;
+    height: 0.8vh;
+    background-color: gray;
+    border-radius: 100%; 
+}
+
+.line {
+    width: 3rem;
+    height: 0.5vh;
+    background-color: gray;
+}
+
+.main-content {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.docs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.docs p {
+    color: blue;
+    font-weight: 700;
+}
+
+.docs .menu-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    background-color: blue;
+    padding: 0.4rem;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.docs .menu-bar {
+    width: 1.1rem;
+    height: 0.4vh;
+    background-color: #FFFFFF;
+}
+
+.docs .menu-bar:nth-child(3) {
+    width: 0.7rem;
+}
+
+
+@media (max-width: 779px) {
+    .modal {
+        width: 80%;
+    }
+
+    .close i {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .main-content p {
+        font-size: 0.8rem;
+    }
+
+    button {
+        width: unset;
+    }
+}
